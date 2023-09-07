@@ -1,0 +1,47 @@
+<mvc:View controllerName="fioriproject2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+      
+         <Toolbar id="_IDGenToolbar1">
+            <Title id="_IDGenTitle1" text="this is title"/>
+            <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+            <SearchField id="_IDGenSearchField1" width="50%" search=".onFilterInvoices"/>
+         </Toolbar>
+     
+        <Table id="table" items="{/Products}" growing="true" growingThreshold="10" class="color" >
+          <columns>
+           <Column id="heading1" >
+             <Text id="text1" text="ProductID"/>
+           </Column>
+           <Column id="heading2" >
+             <Text id="text2" text="ProductName"/>
+           </Column>
+           <Column id="heading3" >
+             <Text id="text3" text="SupplierID"/>
+           </Column>
+           <Column id="heading4" >
+             <Text id="text4" text="UnitPrice"/>
+           </Column>
+           <Column id="heading5" >
+             <Text id="text5" text="QuantityPerUnit"/>
+           </Column>
+          </columns>
+
+          <items>
+           <ColumnListItem id="coloumnlist" type="Navigation" press="onNext" class="color">
+             <cells>
+              <Text id="field1" text ="{ProductID}"/>
+              <Text id="field2" text ="{ProductName}"/>
+              <Text id="field3" text ="{SupplierID}"/>
+              <Text id="field4" text ="{UnitPrice}"/>
+              <Text id="field5" text ="{QuantityPerUnit}"/>
+              
+              
+              
+             </cells>
+           </ColumnListItem>
+          </items>
+        </Table>
+    </Page>
+</mvc:View>

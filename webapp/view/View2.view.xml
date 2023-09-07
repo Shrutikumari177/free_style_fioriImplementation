@@ -1,0 +1,23 @@
+<mvc:View controllerName="fioriproject2.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+     <f:SimpleForm id="form1" class="detailheading">
+      <f:content >
+      <ObjectHeader title="Product details" class="detailheading"></ObjectHeader>
+        <Label id="label1" text="ProductID"></Label>
+        <Text id="formtext1" text="{ProductID}"></Text>
+        <Label id="label2" text="ProductName"></Label>
+        <Text id="formtext2" text="{ProductName}"></Text>
+        <Label id="label3" text="SupplierID"></Label>
+        <Text id="formtext3" text="{SupplierID}"></Text>
+        <Label id="label4" text="UnitPrice"></Label>
+        <Text id="formtext4" text="{UnitPrice}"></Text>
+        <Label id="label5" text="QuantityPerUnit"></Label>
+        <Text id="formtext5" text="{QuantityPerUnit}"></Text>
+        
+
+      </f:content>
+     </f:SimpleForm>
+ </Page>
+</mvc:View>
